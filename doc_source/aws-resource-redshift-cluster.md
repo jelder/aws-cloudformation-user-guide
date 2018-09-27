@@ -228,7 +228,7 @@ You can't specify this parameter for a single\-node cluster\.
 
 `OwnerAccount`  <a name="cfn-redshift-cluster-owneraccount"></a>
 When you restore from a snapshot from another AWS account, the 12\-digit AWS account ID that contains that snapshot\.  
-*Required*: No  
+*Required*: Conditional\. If you specified the `SnapshotClusterIdentifier` property and that cluster is owned by another account, you must specify this property\.  
 *Type*: String  
 *Update requires*: [Replacement](using-cfn-updating-stacks-update-behaviors.md#update-replacement)
 
